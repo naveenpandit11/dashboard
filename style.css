@@ -10,7 +10,7 @@ body {
 }
 
 .section1 {
-    margin: 15px;
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
     width: 70vw;
@@ -18,9 +18,10 @@ body {
 }
 
 .nav-bar {
+    margin-left: 10px;
     display: flex;
     justify-content: space-between;
-    width: 65vw;
+    width: 59vw;
     background-color: #e2efff;
 }
 

@@ -6,7 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .section2 .balance{
+            background-color: #0b99ff;
+            color: white;
+            margin-top: 15px;
+            border-radius: 10px;
+            padding: 10px;
+            width: 25vw;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .section2 .balance .balance-container{
+            display: flex;
+        }
 
+        .section2 .balance .other-container{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            overflow: hidden;
+        }
+
+        .other-container h4{
+            font-size: 14px;
+            font-weight: 100;
+        }
+        .other-container h3{
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .balance-text .balance-head{
+            font-size: 14px;
+            
+        }
+        .balance-text .amount{
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .wallet-button{
+            display: flex;
+            width: 200px;
+            justify-content: space-around;
+        }
+        .wallet-button a{
+            text-decoration: none;
+        }
+        .wallet-button .topup{
+            display: flex;
+            color: black;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            background-color: white;
+            width: 100px;
+            height: 25px;
+        }
+        .wallet-button .transfer{
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            border: white 1px solid;
+            width: 80px;
+            height: 25px;
+        }
+    </style>
 </head>
 
 <body>
@@ -94,18 +162,38 @@
     </div>
     <div class="section2">
         <div class="section2-nav-bar">
-                <div class="nav-heading">Staking wallet</div>
-                <div class="last-button">
-                    <a>USDT</a>
-                </div>
+            <div class="nav-heading">Staking wallet</div>
+            <div class="last-button">
+                <a>USDT</a>
+            </div>
 
         </div>
         <div class="balance">
             <div class="balance-container">
                 <div class="balance-text">
-
+                    <div class="balance-head">AVBL. BALANCE</div>
+                    <div class="amount">68,750,904.45 USDT</div>
                 </div>
                 <img src="" alt="">
+            </div>
+            <div class="other-container">
+                <div class="staked">
+                    <h4>staked</h4>
+                    <h3>2,3264.8967</h3>
+                </div>
+                <div>
+                    <h4>Reward Claimed</h4>
+                    <h3>1,32,64.8967 USDT</h3>
+                </div>
+            </div>
+            <div class="wallet-button">
+                <a href="#">
+                    <div class="topup">Top up wallet</div>
+                </a>
+                <a href="#">
+                    <div class="transfer">Transfer</div>
+                </a>
+
             </div>
         </div>
     </div>

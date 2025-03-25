@@ -7,193 +7,401 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .section2 .balance{
-            background-color: #0b99ff;
-            color: white;
+        .section5 {
+            margin: 15px 0px 0px 5px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .section5 .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            width: 20vw;
+            background-color: #e2efff;
+        }
+
+        .section5 .nav-bar div {
+            color: black;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .section5 .stacking-activation {
+            background-color: white;
+            color: black;
             margin-top: 15px;
             border-radius: 10px;
             padding: 10px;
-            width: 25vw;
-            height: 250px;
+            width: 55vw;
+            height: 350px;
             display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-        }
-        .section2 .balance .balance-container{
-            display: flex;
+            flex-direction: row;
+
+
         }
 
-        .section2 .balance .other-container{
+        .stacking-activation .left {
+            display: flex;
+            /* gap: 25px; */
+            flex-direction: column;
+            justify-content: space-around;
+            width: 50%;
+        }
+
+        .stacking-activation .left .rows {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 90%;
+            height: 100%;
+        }
+
+        .stacking-activation .left .rows div {
+            font-size: 13px;
+            color: gray;
+        }
+
+        .stacking-activation .left .rows select {
+            display: flex;
+            font-size: 13px;
+            width: 50%;
+            height: 30px;
+            border: none;
+            font-weight: 600;
+            background-color: #aaa7a7;
+        }
+
+        .stacking-activation .right {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            height: 100%;
+            justify-content: spac;
+        }
+
+        .stacking-activation .right .head {
+            color: black;
+            font-size: 18px;
+            font-weight: 600;
+            width: 90%;
+            background-color: #aaa7a7;
+            height: 25px;
+        }
+
+        .right-content {
+            display: flex;
+            width: 90%;
+            height: 70%;
+            justify-content: space-around;
+            flex-direction: column;
+
+        }
+
+        .right-content .rows {
             display: flex;
             width: 100%;
             justify-content: space-between;
-            overflow: hidden;
         }
 
-        .other-container h4{
-            font-size: 14px;
-            font-weight: 100;
-        }
-        .other-container h3{
-            font-size: 16px;
-            font-weight: 500;
-        }
-        .balance-text .balance-head{
-            font-size: 14px;
-            
-        }
-        .balance-text .amount{
-            font-size: 16px;
-            font-weight: 600;
-        }
-        .wallet-button{
+        .right-content .rows div {
             display: flex;
-            width: 220px;
-            justify-content: space-around;
+            color: grey;
+            font-size: 13px;
         }
-        .wallet-button a{
+
+        .right .staking-button {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 13px;
+        }
+
+        .right .staking-button a {
             text-decoration: none;
         }
-        .wallet-button .topup{
+
+        .right .staking-button .cancel {
             display: flex;
-            color: black;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
+            color: grey;
+            border: gray solid 1px;
             border-radius: 5px;
-            background-color: white;
             width: 120px;
-            height: 25px;
+            height: 30px;
         }
-        .wallet-button .transfer{
+
+        .right .staking-button .approve {
             display: flex;
-            color: white;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
+            color: white;
+            background-color: #0b99ff;
             border-radius: 5px;
-            border: white 1px solid;
-            width: 80px;
-            height: 25px;
+            width: 120px;
+            height: 30px;
         }
     </style>
 </head>
 
 <body>
-    <div class="section1">
-        <div class="nav-bar">
-            <div class="nav-heading">Staking offerings</div>
-            <div class="nav-buttons">
-                <a>Locking Staking</a>
-                <a>Deft Staking</a>
+    <div class="section-container">
+        <div class="section1">
+            <div class="nav-bar">
+                <div class="nav-heading">Staking offerings</div>
+                <div class="nav-buttons">
+                    <a>Locking Staking</a>
+                    <a>Deft Staking</a>
+                </div>
+                <div class="last-button">
+                    <a>Active</a>
+                </div>
             </div>
-            <div class="last-button">
-                <a>Active</a>
+            <div class="content-container">
+                <div class="content">
+                    <div class="heading">
+                        <img src="" alt="">
+                        <div class="name">
+                            <div class="head-text">Cardono</div>
+                            <div class="grey-text">ADA</div>
+                        </div>
+                        <div class="last">
+                            <div class="grey-text">APY</div>
+                            <div>8.65%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="other-content-container">
+                    <div class="other-content">
+                        <div class="heading">
+                            <img src="" alt="">
+                            <div class="name">
+                                <div class="head-text">Ontology</div>
+                                <div class="grey-text">ONT</div>
+                            </div>
+                            <div class="last">
+                                <div class="grey-text">APY</div>
+                                <div>7.46%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="other-content">
+                        <div class="heading">
+                            <img src="" alt="">
+                            <div class="name">
+                                <div class="head-text">Solona</div>
+                                <div class="grey-text">SOL</div>
+                            </div>
+                            <div class="last">
+                                <div class="grey-text">APY</div>
+                                <div>12.66%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="other-content">
+                        <div class="heading">
+                            <img src="" alt="">
+                            <div class="name">
+                                <div class="head-text">Polkadot</div>
+                                <div class="grey-text">DOT</div>
+                            </div>
+                            <div class="last">
+                                <div class="grey-text">APY</div>
+                                <div>24.50%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="other-content">
+                        <div class="heading">
+                            <img src="" alt="">
+                            <div class="name">
+                                <div class="head-text">XRP</div>
+                                <div class="grey-text">XRP</div>
+                            </div>
+                            <div class="last">
+                                <div class="grey-text">APY</div>
+                                <div>15.47%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
-        <div class="content-container">
-            <div class="content">
-                <div class="heading">
+        <div class="section2">
+            <div class="section2-nav-bar">
+                <div class="nav-heading">Staking wallet</div>
+                <div class="last-button">
+                    <a>USDT</a>
+                </div>
+
+            </div>
+            <div class="balance">
+                <div class="balance-container">
+                    <div class="balance-text">
+                        <div class="balance-head">AVBL. BALANCE</div>
+                        <div class="amount">68,750,904.45 USDT</div>
+                    </div>
                     <img src="" alt="">
-                    <div class="name">
-                        <div class="head-text">Cardono</div>
-                        <div class="grey-text">ADA</div>
+                </div>
+                <div class="other-container">
+                    <div class="staked">
+                        <h4>staked</h4>
+                        <h3>2,3264.8967</h3>
                     </div>
-                    <div class="last">
-                        <div class="grey-text">APY</div>
-                        <div>8.65%</div>
+                    <div>
+                        <h4>Reward Claimed</h4>
+                        <h3>1,32,64.8967 USDT</h3>
                     </div>
                 </div>
-            </div>
-            <div class="other-content-container">
-                <div class="other-content">
-                    <div class="heading">
-                        <img src="" alt="">
-                        <div class="name">
-                            <div class="head-text">Ontology</div>
-                            <div class="grey-text">ONT</div>
-                        </div>
-                        <div class="last">
-                            <div class="grey-text">APY</div>
-                            <div>7.46%</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="other-content">
-                    <div class="heading">
-                        <img src="" alt="">
-                        <div class="name">
-                            <div class="head-text">Solona</div>
-                            <div class="grey-text">SOL</div>
-                        </div>
-                        <div class="last">
-                            <div class="grey-text">APY</div>
-                            <div>12.66%</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="other-content">
-                    <div class="heading">
-                        <img src="" alt="">
-                        <div class="name">
-                            <div class="head-text">Polkadot</div>
-                            <div class="grey-text">DOT</div>
-                        </div>
-                        <div class="last">
-                            <div class="grey-text">APY</div>
-                            <div>24.50%</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="other-content">
-                    <div class="heading">
-                        <img src="" alt="">
-                        <div class="name">
-                            <div class="head-text">XRP</div>
-                            <div class="grey-text">XRP</div>
-                        </div>
-                        <div class="last">
-                            <div class="grey-text">APY</div>
-                            <div>15.47%</div>
-                        </div>
-                    </div>
+                <div class="wallet-button">
+                    <a href="#">
+                        <div class="topup">Top up wallet</div>
+                    </a>
+                    <a href="#">
+                        <div class="transfer">Transfer</div>
+                    </a>
+
                 </div>
             </div>
         </div>
-
     </div>
-    <div class="section2">
-        <div class="section2-nav-bar">
-            <div class="nav-heading">Staking wallet</div>
-            <div class="last-button">
-                <a>USDT</a>
+    <div class="section-container">
+        <div class="section3">
+            <div class="nav-bar">
+                <div>Reward Query</div>
             </div>
-
+            <div class="reward-query">
+                <div class="staked-container">
+                    <div class="heading">Staked Assets</div>
+                    <div class="text">Ontology</div>
+                </div>
+                <div class="staked-container">
+                    <div class="heading">Staked Amount</div>
+                    <div class="text">300025.45 ONT</div>
+                </div>
+                <div class="staked-container">
+                    <div class="heading">Staked Period</div>
+                    <div class="text">6 Month</div>
+                </div>
+                <div class="staked-container">
+                    <div class="heading">Estimate reward</div>
+                    <div class="text">400025015 ONT</div>
+                </div>
+            </div>
         </div>
-        <div class="balance">
-            <div class="balance-container">
-                <div class="balance-text">
-                    <div class="balance-head">AVBL. BALANCE</div>
-                    <div class="amount">68,750,904.45 USDT</div>
-                </div>
-                <img src="" alt="">
+        <div class="section4">
+            <div class="nav-bar">
+                <div class="heading">Staking Reward</div>
             </div>
-            <div class="other-container">
-                <div class="staked">
-                    <h4>staked</h4>
-                    <h3>2,3264.8967</h3>
+            <div class="staking-reward">
+                <div class="head">
+                    <div class="left">Stake Asset</div>
+                    <div class="right">
+                        <select class="right" name="" id="">
+                            <option>ont</option>
+                        </select>
+                    </div>
                 </div>
-                <div>
-                    <h4>Reward Claimed</h4>
-                    <h3>1,32,64.8967 USDT</h3>
+                <div class="middle">
+                    <div class="cont">
+                        <div class="head">Stake Asset</div>
+                        <div class="text">12.15 ONT</div>
+                    </div>
+                    <div class="cont">
+                        <div class="head">Next Claim Available in</div>
+                        <div class="text">3D:4H:15 MIN</div>
+                    </div>
                 </div>
+                <div class="last"><a href="#">Claim Rewards</a></div>
             </div>
-            <div class="wallet-button">
-                <a href="#">
-                    <div class="topup">Top up wallet</div>
-                </a>
-                <a href="#">
-                    <div class="transfer">Transfer</div>
-                </a>
+        </div>
+    </div>
+    <div class="section-container">
+        <div class="section5">
+            <div class="nav-bar">
+                <div class="heading">Stacking Activation</div>
+            </div>
+            <div class="stacking-activation">
+                <div class="left">
+                    <div class="rows">
+                        <div>Select Asset</div>
+                        <select name="" id="">
+                            <option>Ontology</option>
+                        </select>
+                    </div>
+                    <div class="rows">
+                        <div>Lock-Up Periods</div>
+                        <select name="" id="">
+                            <option>6 MONTH</option>
+                        </select>
+                    </div>
+                    <div class="rows">
+                        <div>Amount to Stake</div>
+                        <select name="" id="">
+                            <option>30035.64 ONT</option>
+                        </select>
+                    </div>
+                    <div class="rows">
+                        <div>Stake Validator</div>
+                        <select name="" id="">
+                            <option>PoS Blockchain</option>
+                        </select>
+                    </div>
+                    <div class="rows">
+                        <div>Reward Claiming</div>
+                        <select name="" id="">
+                            <option>6 Month</option>
+                        </select>
+                    </div>
+                    <div class="rows">
+                        <div>Select Asset</div>
+                        <select name="" id="">
+                            <option>Ontology</option>
+                        </select>
+                    </div>
+                    <div>
+                        <div class="custom-staking">Custom Staking</div>
+                    </div>
+                </div>
 
+                <div class="right">
+                    <div class="head">Summary</div>
+                    <div class="right-content">
+                        <div class="rows">
+                            <div>Start Date</div>
+                            <div>2024-02-15-05:32</div>
+                        </div>
+                        <div class="rows">
+                            <div>Intrest Period</div>
+                            <div>6 Month</div>
+                        </div>
+                        <div class="rows">
+                            <div>Stake End Date</div>
+                            <div>2024-08-15-05:32</div>
+                        </div>
+                        <div class="rows">
+                            <div>Redemption Date</div>
+                            <div>2024-08-20</div>
+                        </div>
+                        <div class="rows">
+                            <div>Est.APY</div>
+                            <div>25.12%</div>
+                        </div>
+                        <div class="rows">
+                            <div>Estimate Intrest</div>
+                            <div>4025.506 ONT</div>
+                        </div>
+                    </div>
+                    <div class="staking-button">
+                        <a href="#">
+                            <div class="cancel">Cancel Staking</div>
+                        </a>
+                        <a href="#">
+                            <div class="approve">Approve Staking</div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -6,24 +6,27 @@
 }
 
 body {
+    padding: 20px;
     display: flex;
-
+    flex-direction: column;
     background-color: #e2efff;
 }
-
+.section-container{
+    display: flex;
+}
 .section1 {
     margin-top: 15px;
     display: flex;
     flex-direction: column;
-    width: 70vw;
-    height: 50vh;
+    width: 62vw;
+    height: 350px;
 }
 
-.nav-bar {
-    margin-left: 10px;
+.section1 .nav-bar {
+    margin-left: px;
     display: flex;
     justify-content: space-between;
-    width: 59vw;
+    width: 56vw;
     background-color: #e2efff;
 }
 
@@ -45,7 +48,7 @@ body {
 }
 
 .content-container {
-    margin: 15px;
+    margin: 15px 15px 15px 15px;
     display: flex;
 }
 
@@ -53,7 +56,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 20%;
+    width: 30%;
     height: 250px;
     border-radius: 10px;
     padding: 10px;
@@ -105,7 +108,7 @@ body {
     font-size: 14px;
 }
 .section2{
-    margin: 15px 0px 0px 5px;
+    margin: 15px 0px 0px 0px;
     display: flex;
     flex-direction: column;
 }
@@ -123,4 +126,183 @@ body {
 .section2-nav-bar .last-button {
     color: #aaa7a7;
     font-size: 14px;
+}.section2 .balance {
+    background-color: #0b99ff;
+    color: white;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 25vw;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.section2 .balance .balance-container {
+    display: flex;
+}
+
+.section2 .balance .other-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.other-container h4 {
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.other-container h3 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.balance-text .balance-head {
+    font-size: 14px;
+
+}
+
+.balance-text .amount {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.wallet-button {
+    display: flex;
+    width: 220px;
+    justify-content: space-around;
+}
+
+.wallet-button a {
+    text-decoration: none;
+}
+
+.wallet-button .topup {
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: white;
+    width: 120px;
+    height: 25px;
+}
+
+.wallet-button .transfer {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: white 1px solid;
+    width: 80px;
+    height: 25px;
+}
+.section3 {
+    margin: 15px 0px 0px 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section3 .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 20vw;
+    background-color: #e2efff;
+}
+
+.section3 .nav-bar div {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.section3 .reward-query {
+    background-color: white;
+    color: black;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 55vw;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.staked-container .heading {
+    height: 30px;
+    font-size: 13px;
+    color: gray;
+}
+
+.staked-container .text {
+    background-color: #aaa7a7;
+    font-weight: 600;
+}
+
+.section4 {
+    margin: 15px 0px 0px 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section4 .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 20vw;
+    background-color: #e2efff;
+}
+
+.section4 .nav-bar .heading {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.section4 .staking-reward {
+    background-color: white;
+    color: black;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 25vw;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.staking-reward .head{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.head .left{
+    font-size: 14px;
+}
+.head .right{
+    font-size: 14px;
+
+    border: none;
+    color: #0b99ff;
+}
+.staking-reward .middle{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.middle .cont .head{
+    height: 30px;
+    font-size: 14px;
+}
+.middle .cont .text{
+    font-size: 16px;
+    font-weight: 600;
+}
+.staking-reward .last a{
+    text-decoration: none;
 }

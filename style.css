@@ -67,7 +67,11 @@ body {
     flex-direction: row;
     justify-content: space-between;
 }
-
+.content .heading img{
+    margin: 0px 10px 10px 10px;
+    width: 30px;
+    height: 30px;
+}
 .content .heading .head-text {
     font-weight: 600;
 }
@@ -100,6 +104,11 @@ body {
     flex-direction: row;
     justify-content: space-between;
 }
+.other-content .heading img{
+    margin: 0px 10px 10px 10px;
+    width: 30px;
+    height: 30px;
+}
 .other-content .head-text {
     font-weight: 600;
 }
@@ -115,7 +124,7 @@ body {
 .section2-nav-bar{
     display: flex;
     justify-content: space-between;
-    width: 20vw;
+    width: 30vw;
     background-color: #e2efff;
 }
 .section2-nav-bar .nav-heading {
@@ -124,7 +133,7 @@ body {
     font-weight: 600;
 }
 .section2-nav-bar .last-button {
-    color: #aaa7a7;
+    color: grey;
     font-size: 14px;
 }.section2 .balance {
     background-color: #0b99ff;
@@ -132,7 +141,7 @@ body {
     margin-top: 15px;
     border-radius: 10px;
     padding: 10px;
-    width: 25vw;
+    width: 30vw;
     height: 250px;
     display: flex;
     flex-direction: column;
@@ -241,7 +250,7 @@ body {
 }
 
 .staked-container .text {
-    background-color: #aaa7a7;
+    background-color: #f8f8f8;
     font-weight: 600;
 }
 
@@ -270,7 +279,7 @@ body {
     margin-top: 15px;
     border-radius: 10px;
     padding: 10px;
-    width: 25vw;
+    width: 30vw;
     height: 150px;
     display: flex;
     flex-direction: column;
@@ -305,4 +314,182 @@ body {
 }
 .staking-reward .last a{
     text-decoration: none;
+}
+.section5 {
+    margin: 15px 0px 0px 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section5 .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 55vw;
+    background-color: #e2efff;
+}
+
+.section5 .nav-bar .heading {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+.section5 .nav-bar .last{
+    color: grey;
+
+}
+
+.section5 .stacking-activation {
+    background-color: white;
+    color: black;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 55vw;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.stacking-activation .left {
+    display: flex;
+    /* gap: 25px; */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.stacking-activation .left .rows {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 100%;
+}
+
+.stacking-activation .left .rows div {
+    font-size: 13px;
+    color: gray;
+}
+
+.stacking-activation .left .rows select {
+    display: flex;
+    font-size: 13px;
+    width: 50%;
+    height: 30px;
+    border: none;
+    font-weight: 600;
+    background-color: #f8f8f8;
+}
+.stacking-activation .left .custom-staking{
+    font-size: 13px;
+    color: rgb(87, 86, 86);
+}
+.stacking-activation .right {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    justify-content: spac;
+}
+
+.stacking-activation .right .head {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    width: 90%;
+    background-color: #f8f8f8;
+    height: 25px;
+}
+
+.right-content {
+    display: flex;
+    width: 90%;
+    height: 70%;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+
+.right-content .rows {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.right-content .rows div {
+    display: flex;
+    color: grey;
+    font-size: 13px;
+}
+
+.right .staking-button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 13px;
+}
+
+.right .staking-button a {
+    text-decoration: none;
+}
+
+.right .staking-button .cancel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: grey;
+    border: gray solid 1px;
+    border-radius: 5px;
+    width: 120px;
+    height: 30px;
+}
+
+.right .staking-button .approve {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #0b99ff;
+    border-radius: 5px;
+    width: 120px;
+    height: 30px;
+}
+
+.section6{
+    margin: 15px 0px 0px 5%;
+display: flex;
+flex-direction: column;
+
+}
+.section6 .nav-bar {
+display: flex;
+justify-content: space-between;
+width: 30vw;
+background-color: #e2efff;
+}
+.section6 .nav-bar .heading {
+color: black;
+font-size: 18px;
+font-weight: 600;
+}
+.section6 .nav-bar .last {
+color: grey;
+}
+.section6 .graph{
+background-color: white;
+color: black;
+margin-top: 15px;
+border-radius: 10px;
+padding: 10px;
+width: 30vw;
+
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+.graph .graph-img{
+width: 100%;
+height: 100%;
 }
